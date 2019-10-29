@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(odd) {
+  background: #cccc;
+}
+
+section:before {
+  content: attr(data-text) " ";
+  color: #262626;
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
