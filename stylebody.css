@@ -13,6 +13,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 section:nth-child(odd) {
@@ -25,4 +26,13 @@ section:before {
   font-size: 6em;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+#img-home {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
 }
